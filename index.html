@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-AO">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Academia da Programação | Cursos de programação em Angola</title>
+<meta name="description" content="Cursos de mais de 70 linguagens de programação. Matricula-te directamente pelo WhatsApp.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500;700&display=swap">
+<style>
+:root{--navy:#0B1F44;--ink:#111827;--muted:#5B6575;--line:#DDE2EA;--bg:#F6F7FA;--card:#fff;--pu:#5B21B6;--pu2:#4C1D95;--gold:#F5B82E;--wa:#25D366}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{background:var(--bg);color:var(--ink);font:400 16px/1.55 Roboto,"Segoe UI",system-ui,Arial,sans-serif}
+h1,h2,h3,.bn{font-family:Montserrat,"Segoe UI",Arial,sans-serif}
+a{color:inherit;text-decoration:none}
+.i{width:1.2em;height:1.2em;flex:none}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.w{max-width:1160px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;z-index:9;background:var(--navy);color:#fff}
+header .w{display:flex;align-items:center;gap:28px;height:66px}
+.br{display:flex;align-items:center;gap:11px}
+.lo{width:38px;height:38px;border-radius:8px;background:var(--pu);display:grid;place-items:center}
+.lo .i{width:22px;height:22px}
+.bn{font-weight:700;font-size:1rem;line-height:1.1}.br small{display:block;font:400 .74rem Roboto,sans-serif;color:#AEBAD6}
+nav{display:flex;gap:4px;margin-left:auto}
+nav a{padding:8px 14px;font-size:.92rem;color:#D5DCEC;border-bottom:2px solid transparent}
+nav a:hover{color:#fff;border-color:var(--gold)}
+.btn{display:inline-flex;align-items:center;gap:8px;border-radius:8px;font-weight:700;font-size:.92rem;padding:11px 18px;border:0;cursor:pointer;transition:background .15s}
+.bw{background:var(--wa);color:#042F16}.bw:hover{background:#4BE086}
+.bp{background:var(--pu);color:#fff}.bp:hover{background:var(--pu2)}
+.bo{border:1px solid rgba(255,255,255,.4);color:#fff}.bo:hover{background:rgba(255,255,255,.1)}
+.hero{background:var(--navy);color:#fff;padding:60px 0}
+.hero .w{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+h1{font-size:clamp(1.9rem,4vw,2.9rem);line-height:1.15;font-weight:700}
+.hero p{margin:16px 0 26px;color:#C6D0E6;font-size:1.08rem;max-width:33rem}
+.acts{display:flex;flex-wrap:wrap;gap:12px}
+.steps{background:var(--card);color:var(--ink);border-radius:10px;padding:26px}
+.steps h2{font-size:1.05rem;margin-bottom:16px}
+.steps ol{list-style:none;padding:0;display:grid;gap:16px}
+.steps li{display:flex;gap:14px;align-items:flex-start}
+.steps li span{width:30px;height:30px;border-radius:50%;background:var(--pu);color:#fff;display:grid;place-items:center;font:700 .9rem Montserrat,sans-serif;flex:none}
+.steps li b{display:block}.steps li small{color:var(--muted);font-size:.9rem}
+.promo{background:var(--pu2);color:#fff}
+.promo .w{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px 30px;padding-top:18px;padding-bottom:18px}
+.promo h2{font-size:1.15rem;display:flex;align-items:center;gap:10px}.promo h2 .i{color:var(--gold)}
+.pr{display:flex;align-items:baseline;gap:12px}
+.pr s{color:#D9C8F5;text-decoration-color:#FF7B7B}
+.pr b{font:700 1.6rem Montserrat,sans-serif;color:var(--gold)}
+.promo small{color:#D9C8F5}
+.promo .btn{background:var(--gold);color:#2B1B00}.promo .btn:hover{background:#FFC94D}
+.cat{padding:52px 0 20px}
+.hd{max-width:40rem;margin-bottom:24px}
+.hd h2{font-size:clamp(1.5rem,3vw,2rem)}.hd p{color:var(--muted);margin-top:6px}
+.sb{background:#fff;border:1px solid var(--line);border-radius:10px;padding:20px;margin-bottom:22px}.sb>label{display:block;font:700 1rem Montserrat,sans-serif;margin-bottom:10px}.tl{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-bottom:14px}
+.sr{position:relative;flex:1 1 320px}
+.sr .i{position:absolute;left:12px;top:50%;transform:translateY(-50%);color:var(--muted)}
+.sr input{width:100%;padding:14px 16px 14px 42px;border:2px solid var(--line);border-radius:8px;background:#fff;font:inherit;font-size:1rem;color:var(--ink)}.sr input:focus{border-color:var(--pu);outline:0}
+#n{margin-left:auto;color:var(--muted);font-size:.9rem}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips button{border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:8px;padding:7px 14px;font:500 .88rem Roboto,sans-serif;cursor:pointer}
+.chips button[aria-pressed=true]{background:var(--navy);border-color:var(--navy);color:#fff}
+.g{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:16px}
+.cd{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px;display:flex;flex-direction:column;gap:12px}
+.cd:hover{border-color:var(--pu)}
+.tp{display:flex;align-items:center;gap:13px}
+.lg{position:relative;width:48px;height:48px;border:1px solid var(--line);border-radius:10px;background:#fff;display:grid;place-items:center;flex:none;overflow:hidden}
+.lg b{position:absolute;font:700 .85rem Montserrat,sans-serif;color:var(--navy)}
+.lg img{position:relative;width:30px;height:30px;object-fit:contain;background:#fff}
+.tp h3{font-size:1.05rem;line-height:1.2}.tp small{color:var(--muted);font-size:.82rem}
+.cd p{font-size:.9rem;color:var(--muted)}.cd p b{color:var(--ink)}
+.ft{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:10px;padding-top:12px;border-top:1px solid var(--line)}
+.ft strong{font:700 1.05rem Montserrat,sans-serif;color:var(--pu)}
+.ft .btn{padding:9px 14px}
+#z{display:none;padding:30px 0;color:var(--muted)}
+.why{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:44px}
+.why .w{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;padding-top:30px;padding-bottom:30px}
+.why .it{display:flex;gap:14px}
+.why .i{width:42px;height:42px;padding:10px;border-radius:10px;background:#EDE9FE;color:var(--pu)}
+.why b{display:block;font-family:Montserrat,sans-serif;font-size:.98rem}.why small{color:var(--muted)}
+footer{background:var(--navy);color:#C2CCE2;font-size:.92rem}
+footer .w{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px;padding-top:34px;padding-bottom:28px}
+footer h4{color:#fff;font:700 .95rem Montserrat,sans-serif;margin-bottom:12px}
+footer ul{list-style:none;padding:0;display:grid;gap:8px}footer li{display:flex;gap:9px;align-items:center}footer a:hover{color:#fff}
+.cp{border-top:1px solid rgba(255,255,255,.12);padding:15px 20px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;font-size:.84rem;color:#98A4C0;max-width:1160px;margin:0 auto}
+@media(max-width:860px){nav{display:none}header .bw{margin-left:auto}.hero .w,.why .w,footer .w{grid-template-columns:1fr}.hero{padding:40px 0}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="cap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></symbol>
+<symbol id="wa" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.2-5.4A8.4 8.4 0 1 1 21 11.5z"/><path d="M9 9.2c0 3 2.8 5.8 5.8 5.8l1-1.6-2-1-1 .8a4 4 0 0 1-1.8-1.8l.8-1-1-2-1.8.8z"/></symbol>
+<symbol id="bolt" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></symbol>
+<symbol id="se" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></symbol>
+<symbol id="tr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4zM7 6H4v1a3 3 0 0 0 3 3M17 6h3v1a3 3 0 0 1-3 3"/></symbol>
+<symbol id="hs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><path d="M4 14h3v5H5a1 1 0 0 1-1-1v-4zM20 14h-3v5h2a1 1 0 0 0 1-1v-4z"/></symbol>
+<symbol id="mo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></symbol>
+<symbol id="pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+</defs></svg>
+
+<header><div class="w">
+<a class="br" href="#inicio"><span class="lo"><svg class="i"><use href="#cap"/></svg></span><span><span class="bn">Academia da Programação</span><small>Angola</small></span></a>
+<nav aria-label="Principal"><a href="#inicio">Início</a><a href="#cursos">Cursos</a><a href="#precos">Preços</a><a href="#porque">Sobre nós</a><a href="#contactos">Contactos</a></nav>
+<a class="btn bw" data-wa="Olá! Gostaria de saber mais sobre os cursos da Academia da Programação." href="https://wa.me/244928379657" target="_blank" rel="noopener"><svg class="i"><use href="#wa"/></svg>Fale connosco</a>
+</div></header>
+
+<main id="inicio">
+<section class="hero"><div class="w">
+<div>
+<h1>Cursos de programação para construir uma carreira digital.</h1>
+<p>Escolhe entre mais de 70 linguagens, vê para que serve cada uma e matricula-te directamente pelo WhatsApp.</p>
+<div class="acts"><a class="btn bp" href="#cursos">Ver cursos</a><a class="btn bo" href="#precos">Ver promoção</a></div>
+</div>
+<div class="steps"><h2>Como te matriculas</h2>
+<ol>
+<li><span>1</span><div><b>Escolhe a linguagem</b><small>Lê para que serve e onde se usa.</small></div></li>
+<li><span>2</span><div><b>Clica em Matricular</b><small>O WhatsApp abre com a mensagem pronta.</small></div></li>
+<li><span>3</span><div><b>Confirma a inscrição</b><small>A nossa equipa responde e orienta-te.</small></div></li>
+</ol></div>
+</div></section>
+
+<section class="promo" id="precos"><div class="w">
+<h2><svg class="i"><use href="#bolt"/></svg>Promoção relâmpago por tempo limitado</h2>
+<div class="pr"><s>16.250 Kz</s><b>8.500 Kz</b><small>por curso</small></div>
+<a class="btn" data-wa="Olá! Quero aproveitar a promoção de 8.500 Kz da Academia da Programação." href="https://wa.me/244928379657" target="_blank" rel="noopener"><svg class="i"><use href="#wa"/></svg>Aproveitar</a>
+</div></section>
+
+<section class="cat" id="cursos"><div class="w">
+<div class="hd"><h2>Catálogo de cursos</h2><p>Cada curso mostra para que serve a linguagem e onde pode ser usada.</p></div>
+<div class="sb" role="search"><label for="q">Procura a tua linguagem</label><div class="tl"><div class="sr"><svg class="i"><use href="#se"/></svg><input id="q" type="search" placeholder="Escreve o nome ou a área, por exemplo Python, Web ou Mobile" autocomplete="off"></div><span id="n" aria-live="polite"></span></div><div class="chips" id="ch"></div></div>
+<div class="g" id="g"></div>
+<p id="z">Nenhuma linguagem encontrada. Tenta outro nome.</p>
+</div></section>
+
+<section class="why" id="porque"><div class="w">
+<div class="it"><svg class="i"><use href="#tr"/></svg><div><b>Formação com foco na prática</b><small>Aprendes a fazer, não só a ler.</small></div></div>
+<div class="it"><svg class="i"><use href="#hs"/></svg><div><b>Suporte e orientação</b><small>Acompanhamento em todo o processo.</small></div></div>
+<div class="it"><svg class="i"><use href="#mo"/></svg><div><b>Aprendizagem 100% online</b><small>Estuda de onde estiveres.</small></div></div>
+</div></section>
+</main>
+
+<footer id="contactos"><div class="w">
+<div><a class="br" href="#inicio"><span class="lo"><svg class="i"><use href="#cap"/></svg></span><span><span class="bn" style="color:#fff">Academia da Programação</span><small>Angola</small></span></a>
+<p style="margin-top:14px;max-width:22rem">Cursos de programação para quem quer aprender na prática e começar uma carreira digital.</p></div>
+<div><h4>Links rápidos</h4><ul><li><a href="#inicio">Início</a></li><li><a href="#cursos">Cursos</a></li><li><a href="#precos">Preços</a></li><li><a href="#porque">Sobre nós</a></li></ul></div>
+<div><h4>Contactos</h4><ul>
+<li><svg class="i"><use href="#wa"/></svg><a data-wa="Olá! Gostaria de falar com a Academia da Programação." href="https://wa.me/244928379657" target="_blank" rel="noopener">Fale connosco pelo WhatsApp</a></li>
+<li><svg class="i"><use href="#pin"/></svg>Angola</li></ul></div>
+</div>
+<div class="cp"><span>© 2026 Academia da Programação. Todos os direitos reservados.</span><span>Educação digital para um Angola mais forte</span></div></footer>
+
+<script>
+var D="Python|python|Geral|Automatiza tarefas, analisa dados e cria inteligência artificial.|Ciência de dados, IA, automação e back-end.\nJavaScript|javascript|Web|Dá interacção às páginas web e corre também em servidores.|Sites, aplicações web e apps móveis.\nTypeScript|typescript|Web|JavaScript com tipos, mais seguro em projectos grandes.|Aplicações web de grande porte.\nJava|java|Geral|Linguagem robusta para sistemas que exigem estabilidade.|Bancos, sistemas empresariais e Android.\nC|c|Sistemas|Base da informática, com controlo directo do hardware.|Sistemas operativos e microcontroladores.\nC++|cplusplus|Sistemas|C com orientação a objectos e máximo desempenho.|Jogos, motores gráficos e software pesado.\nC#|csharp|Geral|Linguagem moderna da Microsoft, clara e produtiva.|Apps Windows, jogos com Unity e .NET.\nPHP|php|Web|Feita para a web, gera páginas dinâmicas com bases de dados.|Sites, lojas online e WordPress.\nHTML|html5|Web|Define a estrutura e o conteúdo das páginas web.|Todos os sites e aplicações web.\nCSS|css3|Web|Controla cores, letras e disposição das páginas.|Design de sites adaptados ao telemóvel.\nSQL||Dados|Cria, consulta e gere bases de dados.|Sistemas de gestão e relatórios.\nGo|go|Sistemas|Criada pela Google, rápida e simples de escalar.|Servidores, APIs e nuvem.\nRust|rust|Sistemas|Velocidade com segurança de memória.|Infra-estrutura e software de sistemas.\nKotlin|kotlin|Mobile|Linguagem concisa e oficial para Android.|Apps Android e back-end.\nSwift|swift|Mobile|Linguagem da Apple para apps rápidas e seguras.|Apps iPhone, iPad e Mac.\nDart|dart|Mobile|Linguagem do Flutter, uma app para vários sistemas.|Apps Android, iOS e web.\nRuby|ruby|Web|Elegante e legível, acelera o desenvolvimento web.|Ruby on Rails e startups.\nR|r|Dados|Estatística e visualização de dados.|Investigação, saúde e finanças.\nLua|lua|Jogos|Leve e fácil de embutir noutros programas.|Scripts de jogos e Roblox.\nBash|bash|Scripting|Linha de comandos para automatizar tarefas em Linux.|Servidores e DevOps.\nPerl|perl|Scripting|Forte no tratamento de texto e automação.|Processamento de texto e sistemas.\nScala|scala|Geral|Une orientação a objectos e programação funcional na JVM.|Grandes volumes de dados.\nHaskell|haskell|Geral|Puramente funcional, pensa-se como em matemática.|Ensino, investigação e finanças.\nAssembly||Sistemas|A mais próxima do processador.|Drivers, microcontroladores e segurança.\nObjective-C|objectivec|Mobile|Linguagem histórica das apps Apple.|Manutenção de apps iOS e macOS.\nVisual Basic||Geral|Linguagem simples para aplicações Windows.|Sistemas de gestão e escritório.\nVBA||Scripting|Automatiza tarefas no Excel e no Office.|Folhas de cálculo e relatórios.\nDelphi|delphi|Geral|Desenvolvimento rápido de aplicações desktop.|Sistemas comerciais e bases de dados.\nPascal||Educação|Linguagem clara, muito usada no ensino.|Aprender lógica de programação.\nFortran|fortran|Dados|Cálculo numérico de alta performance.|Física, meteorologia e engenharia.\nCOBOL||Geral|Linguagem dos sistemas financeiros clássicos.|Bancos e seguradoras.\nMATLAB|matlab|Dados|Cálculo técnico, matrizes e simulação.|Engenharia e investigação.\nJulia|julia|Dados|Cálculo científico rápido e fácil de ler.|Ciência de dados e simulações.\nElixir|elixir|Web|Sistemas em tempo real que aguentam muita carga.|Chats e serviços web escaláveis.\nErlang|erlang|Sistemas|Sistemas distribuídos que não podem falhar.|Telecomunicações e mensagens.\nClojure|clojure|Geral|Lisp moderno na plataforma Java.|Sistemas de dados e back-end.\nF#|fsharp|Geral|Programação funcional na plataforma .NET.|Finanças e análise de dados.\nOCaml|ocaml|Geral|Funcional, rápida e com tipagem forte.|Compiladores e finanças.\nGroovy|groovy|Scripting|Scripts dinâmicos na plataforma Java.|Automação de builds e testes.\nPowerShell|powershell|Scripting|Automatiza a administração do Windows.|Gestão de servidores e redes.\nSolidity|solidity|Outros|Cria contratos inteligentes.|Blockchain e Ethereum.\nGDScript|godot|Jogos|Linguagem do motor de jogos Godot.|Jogos 2D e 3D.\nScratch||Educação|Programação por blocos visuais.|Primeiros passos para iniciantes.\nPortugol||Educação|Pseudocódigo em português para aprender lógica.|Introdução à programação.\nProlog||Outros|Programação por regras e lógica.|Inteligência artificial e sistemas especialistas.\nLisp||Geral|Uma das linguagens mais antigas e flexíveis.|IA e investigação.\nScheme||Educação|Lisp minimalista para ensinar conceitos.|Ensino universitário.\nRacket||Educação|Lisp para criar linguagens e ensinar.|Ensino e investigação.\nAda||Sistemas|Segurança e fiabilidade em sistemas críticos.|Aviação e defesa.\nD||Sistemas|Alternativa moderna ao C++.|Software de sistemas e jogos.\nNim|nim|Sistemas|Sintaxe simples com desempenho de C.|Ferramentas e sistemas.\nCrystal|crystal|Sistemas|Sintaxe de Ruby com velocidade de C.|Servidores e ferramentas.\nZig|zig|Sistemas|Controlo total, simples e sem surpresas.|Software de baixo nível.\nElm|elm|Web|Front-end funcional sem erros em execução.|Aplicações web fiáveis.\nCoffeeScript|coffeescript|Web|Sintaxe curta que compila para JavaScript.|Projectos web antigos.\nHaxe|haxe|Jogos|Compila para muitas plataformas.|Jogos multiplataforma.\nSmalltalk||Educação|Pioneira da orientação a objectos.|Ensino e investigação.\nTcl||Scripting|Linguagem de scripts simples e embutível.|Automação e testes.\nVHDL||Sistemas|Descreve circuitos digitais.|Electrónica e FPGA.\nVerilog||Sistemas|Projecta hardware digital.|Chips e FPGA.\nABAP||Outros|Linguagem dos sistemas SAP.|Gestão empresarial SAP.\nApex||Outros|Linguagem da plataforma Salesforce.|CRM e automação de vendas.\nSAS||Dados|Análise estatística empresarial.|Saúde, banca e seguros.\nPL/SQL||Dados|SQL com programação para a base de dados Oracle.|Sistemas Oracle.\nAwk||Scripting|Filtra e transforma texto em linha de comandos.|Análise de ficheiros e logs.\nLogo||Educação|Ensina a programar com uma tartaruga que desenha.|Educação infantil.\nHack||Web|PHP com tipos, criada pelo Facebook.|Sistemas web de grande escala.\nRaku|raku|Scripting|Linguagem expressiva e moderna, sucessora do Perl.|Processamento de texto.\nGLSL||Jogos|Programa a placa gráfica.|Efeitos visuais e jogos.\nWebAssembly||Web|Código rápido a correr no navegador.|Jogos e apps pesadas na web.\nEiffel||Educação|Programação por contratos.|Ensino e software fiável.\nAPL||Dados|Notação concisa para matrizes.|Finanças e análise numérica.\nForth||Sistemas|Linguagem mínima para sistemas pequenos.|Electrónica embarcada.";
+var L=D.split("\n").map(function(r){return r.split("|")}),P="8.500 Kz",N="244928379657",cat="Todas",q="";
+function wa(t){return"https://wa.me/"+N+"?text="+encodeURIComponent(t)}
+var G=document.getElementById("g"),Z=document.getElementById("z"),NN=document.getElementById("n"),CH=document.getElementById("ch");
+var cats=["Todas"].concat(L.map(function(l){return l[2]}).filter(function(c,i,a){return a.indexOf(c)===i}).sort());
+function chips(){CH.innerHTML=cats.map(function(c){return'<button type="button" aria-pressed="'+(c===cat)+'" data-c="'+c+'">'+c+'</button>'}).join("")}
+function mono(n){return n.replace(/[^A-Za-z#+]/g,"").slice(0,3)}
+function draw(){
+ var r=L.filter(function(l){return(cat==="Todas"||l[2]===cat)&&(l[0]+" "+l[2]+" "+l[3]+" "+l[4]).toLowerCase().indexOf(q)>-1});
+ G.innerHTML=r.map(function(l){
+  var im=l[1]?'<img loading="lazy" alt="Logótipo de '+l[0]+'" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/'+l[1]+'/'+l[1]+'-original.svg" onerror="this.remove()">':"";
+  return'<article class="cd"><div class="tp"><span class="lg"><b>'+mono(l[0])+'</b>'+im+'</span><div><h3>'+l[0]+'</h3><small>'+l[2]+'</small></div></div><p><b>Para que serve:</b> '+l[3]+'</p><p><b>Onde usar:</b> '+l[4]+'</p><div class="ft"><strong>'+P+'</strong><a class="btn bp" target="_blank" rel="noopener" href="'+wa("Olá! Quero fazer matrícula no curso de "+l[0]+" ("+P+").")+'"><svg class="i"><use href="#wa"/></svg>Matricular</a></div></article>'}).join("");
+ Z.style.display=r.length?"none":"block";NN.textContent=r.length+(r.length===1?" linguagem":" linguagens");
+}
+CH.addEventListener("click",function(e){var c=e.target.getAttribute("data-c");if(c){cat=c;chips();draw()}});
+document.getElementById("q").addEventListener("input",function(e){q=e.target.value.toLowerCase().trim();draw()});
+document.querySelectorAll("[data-wa]").forEach(function(a){a.href=wa(a.dataset.wa)});
+chips();draw();
+</script>
+</body>
+</html>
